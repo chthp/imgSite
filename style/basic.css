@@ -1,0 +1,72 @@
+body, h1, h2, h3, h4, h5, h6, blockquote, p, pre, dl, dd, menu, ol, ul, caption, th, td, form, fieldset, legend, input, button, textarea, address{margin: 0; padding: 0}
+html{padding: 0; margin: 0;}
+h1, h2, h3, h4, h5, h6{font-size: 100%}
+menu, ol, ul{list-style: none}
+table{border-collapse: collapse; border-spacing: 0; empty-cells: show; font-size: inherit}
+fieldset, img{border: 0; vertical-align: middle}
+address, cite, dfn, em, var{font-style: normal}
+code, kbd, pre, samp{font-family: courier new, courier, monospace}
+input, button, textarea, select{font-size: 100%}
+abbr[title]{border-bottom: 1px dotted; cursor: help}
+a{text-decoration: none}
+ul{list-style: none;}
+body, input, button, textarea, select, option, optgroup{font: 12px "Microsoft Yahei"}
+body{width: 100%; height: 100%; background: #eee; font-family: "Microsoft Yahei", Arial, Lucida Grande, Lucida Sans Unicode, Verdana, sans-serif;}
+.clearfix:before,
+.clearfix:after{display: table; content: " ";}
+.clearfix:after{clear: both;}
+.font_14{font-size: 14px;}
+.over_hide{overflow: hidden;}
+.btn_default{display: block; width:50px; height: 28px; background-color: #e23d46; border: 1px solid #c90000; border-radius: 2px;  color: #fff; line-height: 28px; text-align: center;}
+.c_f9f9f9{background-color:#f9f9f9; border: 1px solid #d9d9d9; color: #444; }
+.w_1024{width: 1024px;}
+.page-min-width { min-width:1024px}
+.header{position: fixed;top: 0; left: 0; right: 0; height: 48px; z-index: 9000; background: #fff; box-shadow: 0 0 4px rgba(0,0,0,.2);}
+.header .wrap{ width: 996px;margin: 10px auto;}
+.header .wrap .header_logo{width: 80px; height: 28px; overflow: hidden; font-size: 16px; float: left;}
+.header .wrap .header_search{ float: left; width: 528px; height: 30px; margin-left: 40px;}
+.header .header_search .search_box{float: left; width:447px; height: 28px; border: 1px solid #ddd; border-right: none; }
+.header .header_search .search_input{width: 100%; height: 28px;border: none; padding: 0 5px;}
+.header .header_search .search_btn{ display: block; float: right; width: 80px; height: 30px; line-height: 30px; text-align: center; font-size: 14px; background-color: #e23d46; color: #fff;}
+.header .wrap .header_btn{ float: right;}
+.header .wrap .header_btn a{ float: left; margin-left: 15px; }
+.explore-banner{position:relative;overflow:hidden;width:100%;color:#fff;font-size:14px}
+.explore-banner .bg-gradient{position:absolute;overflow:hidden;z-index:2;height:100%;width:100%;min-width:900px;background-color:#999}
+.explore-banner .bg-img{overflow:hidden;position:absolute;margin-top:-50px;width:38%;min-width:600px;min-height:369px;opacity:0;background-size:cover;-webkit-transition:opacity .6s ease-in-out;transition:opacity .6s ease-in-out}
+.explore-banner .bg-img.load{opacity:.7}
+.explore-banner .explore-info{z-index:2;margin:60px auto 30px auto;text-align:center;overflow:hidden}
+.explore-banner .title{margin:25px 0 3px 0;font-size:32px;font-weight:500;text-shadow:none}
+.explore-banner .info{display:block;padding-bottom:15px;margin:10px auto;width:35%}
+.explore-banner .explore-bg{position:absolute;width:100%;height:100%;text-align:left;overflow:hidden;z-index:-1}
+.explore-banner .follow-explore{margin-bottom:15px}
+.explore-banner .follow-title{position:relative;padding-bottom:15px;width:300px;margin:0 auto}
+.explore-banner .follow-title:after,.explore-banner .follow-title:before{display:block;position:absolute;top:7px;width:30px;height:1px;background:rgba(255,255,255,.6);content:""}
+.explore-banner .follow-title:before{left:214px}
+.explore-banner .follow-title:after{right:214px}
+.explore-banner .follow-title .icon{margin-right:10px;background-position:-95px 0}
+/*瀑布流css*/
+.container-fluid { width: 1024px; margin: 0 auto;}
+.container-fluid .cell { width: 236px;float: left; background: #fff; margin: 20px 20px 0 0; box-shadow: -1px 2px 3px 1px #ccc;float:left;}
+.container-fluid .cell:hover {box-shadow: -1px 2px 3px 1px #999;}
+.cell .img_area{ display: block; position: relative;}
+.cell .thumbnail { width: 236px;}
+.cell .load { width: 236px;}
+.cell .price{ position: absolute; right: 0; bottom: 0;background: gray; background: rgba(0,0,0,.3); height: 22px; line-height: 22px;padding: 0 10px; color: #fff; font-size: 14px; cursor: pointer;}
+.cell .price .price_num{ font-weight: normal;}
+.cell a i.jian { display: block; width: 40px; height: 46px; position: absolute; margin-left: 20px;background: url('../images/jian.png') no-repeat;}
+.cell .attribution{padding:0 15px}
+.cell .attribution .img{width:34px; height:34px; margin:16px 0; display:block; float:left}
+.cell .attribution .v-icon{position:absolute; top:40px; left:40px}
+.cell .attribution .avt{width:34px; height:34px; display:block}
+.cell .attribution .text{margin-left:34px; height:51px; padding:15px 0 0 10px; line-height:1.5}
+.cell .attribution .text .inner{height:37px; overflow:hidden}
+.cell .attribution .text .inner .line{display:inline-block; width:100%}
+.cell .attribution .text .inner .line .author{float:left; max-width:120px; white-space:nowrap; max-height:80px; overflow:hidden}
+#popupbg{ background: #000; background: rgba(0,0,0,.3); position: fixed; top: 0; left: 0; right: 0; bottom: 0; z-index: 99994; padding: 30px 0; display: none; overflow: auto; }
+#popupbg .pop_window{width: 500px;  margin: 10px; position: relative; left: 0; top: 0; z-index: 99995;  display: none}
+#popupbg .pop_window img{width: 460px; padding: 20px; background-color: #fff;}
+#popupbg .btn_close{ position: fixed; right: 17px; top:0; z-index: 99995; width: 48px; height: 48px; background: url(../images/close.png) no-repeat; border-radius: 0 0 0 4px;}
+#popupbg .arrows{ width: 49px; height: 49px; background: url(../images/arrows.png) no-repeat; position: fixed; top: 50%; margin-top: -25px;}
+#popupbg .prve{ background-position: 0 0; left: 0;border-radius:0 4px 4px 0;}
+#popupbg .next{ background-position: -50px 0; right: 17px;border-radius: 4px 0 0 4px;}
+#popupbg .hover,#popupbg .hover{  background-color: #08c;}
