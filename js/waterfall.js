@@ -1,4 +1,7 @@
 ﻿$(function() {
+    // 页面宽度
+    var pageWith =0;
+
     // 页面初始化瀑布流加载
     var $container = $('#waterFall');
     $container.imagesLoaded( function(){
@@ -7,6 +10,9 @@
             isAnimated: true,
             isResizableL:true
         });
+
+        // 获取到页面宽度
+        pageWith = $(document).width() < $('body').width() ? $(document).width() : $('body').width();
     });
 
     // 滚动到下面时候，加载数据后，瀑布流加载
@@ -127,14 +133,8 @@
         var dataId = $(this).parents(".cell").attr('data-id');//找出对应的 data-id的值
         $(this).attr('data-id',dataId).clone(true).prependTo($('#contentSort'));//克隆图片节点，追加到弹出层的内容块
 
-        var imgHeight = $('#contentSort .thumbnail').outerHeight(true);
-        var winHeight = $(window).height();
-        if(imgHeight > winHeight){
-            $('#popupbg .next,#popupbg .btn_close').css('right','17px');
-        }else{
-            $('#popupbg .next,#popupbg .btn_close').css('right','0');
-           // $('#contentSort .thumbnail').css('margin-top',(winHeight-imgHeight)/2+'px');
-        }
+        // 防止抖动，设置为初始页面高度
+        $('body,.header').width(pageWith);
     });
 
     // 关闭按钮
@@ -201,5 +201,5 @@ function shadeLayer(obj){
     var scrollTop=$(document).scrollTop();
     var scrollLeft=$(document).scrollLeft();
     $(obj).css({"top":top+scrollTop,"left":left+scrollLeft});
-    $(obj).show();
+   $(obj).show();
 }
