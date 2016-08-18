@@ -7,7 +7,7 @@
     $container.imagesLoaded( function(){
         $container.masonry({
             itemSelector : '.cell',
-            isAnimated: true,
+            isAnimated: false,
             isResizableL:true
         });
 
